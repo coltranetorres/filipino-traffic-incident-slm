@@ -105,8 +105,7 @@ The revisions are not pinned, so a re-download may fetch a newer snapshot of a m
 
 `data/processed/{train,validation,test}.jsonl` (207 / 40 / 176 items, all synthetic) with sha256 checksums and class
 counts in `data/processed/MANIFEST.json`. `trafficslm.data.verify_manifest()` checks them, and the test-split
-path calls it. `data/aliases.json` is the road-name alias list used when scoring locations. Label rules are in
-`docs/annotation-guidelines.md`; `data/annotations/` holds the annotation batch files.
+path calls it. `data/aliases.json` is the road-name alias list used when scoring locations. `data/annotations/` holds the annotation batch files.
 
 ## Reproduction order
 
@@ -150,4 +149,3 @@ predictions, `results*.json` or `meta*.json`; post-hoc analyses go to new files 
 
 - `research/findings.md`: results, limitations, next steps.
 - `research/selection.md`: validation-based selection and the declared test plan.
-- `docs/annotation-guidelines.md`: label definitions.
