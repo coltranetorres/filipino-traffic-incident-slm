@@ -5,6 +5,8 @@ information (incident type, location, severity, road obstruction, language) from
 Taglish traffic reports, compared with zero-shot and few-shot prompting of the same models. Runs locally with MLX on
 Apple silicon. One seed, synthetic data; see `research/findings.md` for results and limits.
 
+![Overview: research question, approach, findings, conclusion and possible AI-for-good uses](results/overview.png)
+
 ## Research question
 
 > Can a relatively small language model (1-4B parameters), fine-tuned on Filipino, English, and Taglish traffic
