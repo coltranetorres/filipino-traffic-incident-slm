@@ -151,4 +151,3 @@ predictions, `results*.json` or `meta*.json`; post-hoc analyses go to new files 
 - `research/findings.md`: results, limitations, next steps.
 - `research/selection.md`: validation-based selection and the declared test plan.
 - `docs/annotation-guidelines.md`: label definitions.
-- `docs/superpowers/specs/2026-11-10-filipino-traffic-slm-design.md` and `docs/superpowers/plans/`: design and plan.

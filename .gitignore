@@ -8,3 +8,4 @@ experiments/*/adapters/
 experiments/*/mlx_data/
 experiments/*/train.log
 *.tmp
+docs/superpowers/
