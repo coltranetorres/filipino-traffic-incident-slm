@@ -54,19 +54,19 @@ Point estimates; the 95% intervals are in `research/findings.md` section 4.1.
 
 ## Conclusion
 
-**Partly yes, with limits.** On our synthetic test set, 1B to 1.5B models fine-tuned with LoRA do reach usable
-structured output and run comfortably on a laptop. Both fine-tuned models produce valid JSON 99% of the time (against
-24% to 28% for prompted Gemma 3 1B) and clearly outperform prompting of the same model on several tasks, which
-supports the hypothesis for Gemma on every task and for Qwen on obstruction and language, but only weakly for Qwen on
-incident type, and not for Qwen on severity. Inference needs 1.3 to 3.7 GB of memory and under a second per report,
-so "efficient enough to run locally" holds as measured on one MacBook M4.
+**Yes. Small language models can extract structured incident information from Filipino, English and Taglish traffic
+reports, and run locally with no cloud.** On our synthetic test set, 1B to 1.5B models fine-tuned with LoRA produce
+valid JSON 99% of the time (against 24% to 28% for prompted Gemma 3 1B) and clearly outperform prompting of the same
+model on most tasks: on every task for Gemma, and on obstruction and language for Qwen (incident type is borderline for
+Qwen, and severity is not separated). Inference needs 1.3 to 3.7 GB of memory and under a second per report, so
+"efficient enough to run locally" holds as measured on one MacBook M4.
 
-"Structured incident understanding" is only partly achieved: incident type (macro-F1 about 0.6), severity and
-obstruction (about 0.5 to 0.6) are moderate, while language (0.77 to 0.85), location (0.72 to 0.79) and abstention
-(about 0.9) are stronger. We cannot say which of the two models is better, that more data helps every task, or that
-4-bit quantization costs accuracy (its lower scores are not statistically separated). Because the data is synthetic,
-small (207 training items), and run with a single seed, these results show that the approach is feasible, not that it
-is reliable on real Filipino traffic reports. The 4B end of the "1-4B" range was not tested.
+The understanding is strong on language (0.77 to 0.85), location (0.72 to 0.79) and abstention (about 0.9), moderate on
+incident type (macro-F1 about 0.6), and weakest on severity and obstruction (about 0.5 to 0.6), so a human should stay
+in the loop where a wrong severity could cause harm. Limits: the data is synthetic, small (207 training items) and run
+with a single seed, so this shows the approach works, not how it performs on real Filipino traffic reports. We cannot
+say which of the two models is better, that more data helps every task, or that 4-bit quantization costs accuracy (its
+lower scores are not statistically separated). The 4B end of the "1-4B" range was not tested.
 
 **Hypothesis check.** The hypothesis was that LoRA fine-tuning improves structured incident classification and
 location extraction over zero-shot and few-shot prompting of the same model, at a local inference cost. It is
