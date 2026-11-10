@@ -1,0 +1,238 @@
+{
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-bf16",
+  "adapter": "experiments/qwen2.5-1.5b-lora-n207/adapters",
+  "mode": "lora",
+  "n_train": 207,
+  "iters": 156,
+  "epochs": 3,
+  "max_seq_length": 1024,
+  "steps_per_eval": 25,
+  "batch_size": 4,
+  "learning_rate": 1e-05,
+  "num_layers": 16,
+  "seed": 0,
+  "training_wall_s": 235.9,
+  "train_loss_curve": [
+    [
+      5,
+      0.669
+    ],
+    [
+      10,
+      0.225
+    ],
+    [
+      15,
+      0.186
+    ],
+    [
+      20,
+      0.178
+    ],
+    [
+      25,
+      0.148
+    ],
+    [
+      30,
+      0.137
+    ],
+    [
+      35,
+      0.133
+    ],
+    [
+      40,
+      0.133
+    ],
+    [
+      45,
+      0.12
+    ],
+    [
+      50,
+      0.109
+    ],
+    [
+      55,
+      0.129
+    ],
+    [
+      60,
+      0.097
+    ],
+    [
+      65,
+      0.088
+    ],
+    [
+      70,
+      0.091
+    ],
+    [
+      75,
+      0.103
+    ],
+    [
+      80,
+      0.091
+    ],
+    [
+      85,
+      0.09
+    ],
+    [
+      90,
+      0.08
+    ],
+    [
+      95,
+      0.087
+    ],
+    [
+      100,
+      0.072
+    ],
+    [
+      105,
+      0.065
+    ],
+    [
+      110,
+      0.059
+    ],
+    [
+      115,
+      0.061
+    ],
+    [
+      120,
+      0.067
+    ],
+    [
+      125,
+      0.059
+    ],
+    [
+      130,
+      0.069
+    ],
+    [
+      135,
+      0.066
+    ],
+    [
+      140,
+      0.072
+    ],
+    [
+      145,
+      0.065
+    ],
+    [
+      150,
+      0.064
+    ],
+    [
+      155,
+      0.076
+    ],
+    [
+      156,
+      0.062
+    ]
+  ],
+  "val_loss_curve": [
+    [
+      1,
+      1.111
+    ],
+    [
+      25,
+      0.151
+    ],
+    [
+      50,
+      0.131
+    ],
+    [
+      75,
+      0.108
+    ],
+    [
+      100,
+      0.098
+    ],
+    [
+      125,
+      0.104
+    ],
+    [
+      150,
+      0.096
+    ],
+    [
+      156,
+      0.097
+    ]
+  ],
+  "final_train_loss": 0.062,
+  "final_val_loss": 0.097,
+  "train_peak_rss_gb": 3.41,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 895.4848813001263,
+  "latency_ms_median": 895.0395834999654,
+  "peak_memory_gb": 3.77,
+  "adapter_config": {
+    "mask_prompt": true,
+    "fine_tune_type": "lora",
+    "num_layers": 16,
+    "batch_size": 4,
+    "iters": 156,
+    "learning_rate": 1e-05,
+    "seed": 0
+  },
+  "mask_prompt": true,
+  "train_cmd": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "mlx_lm",
+    "lora",
+    "--model",
+    "mlx-community/Qwen2.5-1.5B-Instruct-bf16",
+    "--train",
+    "--fine-tune-type",
+    "lora",
+    "--mask-prompt",
+    "--data",
+    "experiments/qwen2.5-1.5b-lora-n207/mlx_data",
+    "--adapter-path",
+    "experiments/qwen2.5-1.5b-lora-n207/adapters",
+    "--iters",
+    "156",
+    "--batch-size",
+    "4",
+    "--learning-rate",
+    "1e-05",
+    "--num-layers",
+    "16",
+    "--val-batches",
+    "-1",
+    "--steps-per-eval",
+    "25",
+    "--steps-per-report",
+    "5",
+    "--save-every",
+    "156",
+    "--max-seq-length",
+    "1024",
+    "--seed",
+    "0"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "EDSA": [
+    "Epifanio de los Santos Avenue",
+    "Epifanio delos Santos Avenue"
+  ],
+  "Commonwealth Avenue": [
+    "Commonwealth Ave",
+    "Commonwealth"
+  ],
+  "Katipunan Avenue": [
+    "Katipunan",
+    "Katipunan Ave"
+  ],
+  "España Boulevard": [
+    "Espana",
+    "Espana Boulevard",
+    "Espana Blvd"
+  ],
+  "Roxas Boulevard": [
+    "Roxas Blvd",
+    "Roxas"
+  ],
+  "Taft Avenue": [
+    "Taft",
+    "Taft Ave"
+  ],
+  "Aurora Boulevard": [
+    "Aurora Blvd",
+    "Aurora"
+  ],
+  "Quezon Avenue": [
+    "Quezon Ave",
+    "Quezon Ave."
+  ],
+  "C5": [
+    "C-5",
+    "Circumferential Road 5"
+  ],
+  "SLEX": [
+    "South Luzon Expressway"
+  ],
+  "NLEX": [
+    "North Luzon Expressway"
+  ],
+  "Shaw Boulevard": [
+    "Shaw"
+  ],
+  "Recto Avenue": [
+    "Recto"
+  ],
+  "Ortigas Avenue": [
+    "Ortigas"
+  ],
+  "Marcos Highway": [
+    "Marcos"
+  ],
+  "Kalayaan Avenue": [
+    "Kalayaan"
+  ],
+  "McArthur Highway": [
+    "McArthur"
+  ]
+}

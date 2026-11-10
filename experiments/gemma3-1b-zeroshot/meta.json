@@ -1,0 +1,13 @@
+{
+  "model": "mlx-community/gemma-3-1b-it-bf16",
+  "adapter": null,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "mode": "zero-shot",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 709.6364552000523,
+  "latency_ms_median": 698.7009584991029,
+  "peak_memory_gb": 2.855
+}

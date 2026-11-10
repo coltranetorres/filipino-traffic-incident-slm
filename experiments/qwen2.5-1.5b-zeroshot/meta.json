@@ -1,0 +1,13 @@
+{
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-bf16",
+  "adapter": null,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "mode": "zero-shot",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 1075.2092959251058,
+  "latency_ms_median": 1083.2206039995071,
+  "peak_memory_gb": 3.336
+}

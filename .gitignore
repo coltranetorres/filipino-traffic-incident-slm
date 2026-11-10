@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.superpowers/
+experiments/*/adapters/
+.pytest_cache/
+.DS_Store
+experiments/*/mlx_data/
+experiments/*/train.log
+*.tmp

@@ -1,0 +1,5 @@
+{
+  "gemma3-1b": "mlx-community/gemma-3-1b-it-bf16",
+  "qwen2.5-1.5b": "mlx-community/Qwen2.5-1.5B-Instruct-bf16",
+  "gemma3-1b-4bit": "mlx-community/gemma-3-1b-it-4bit"
+}

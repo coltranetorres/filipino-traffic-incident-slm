@@ -1,0 +1,14 @@
+{
+  "model": "mlx-community/gemma-3-1b-it-4bit",
+  "adapter": "experiments/gemma3-1b-4bit-lora-n207/adapters",
+  "max_tokens": 200,
+  "split": "test",
+  "decoding": "greedy",
+  "n_train": 207,
+  "mode": "lora",
+  "shot_ids": [],
+  "n": 176,
+  "latency_ms_mean": 389.11031202831674,
+  "latency_ms_median": 387.4520834979194,
+  "peak_memory_gb": 1.322
+}

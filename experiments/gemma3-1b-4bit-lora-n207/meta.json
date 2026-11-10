@@ -1,0 +1,238 @@
+{
+  "model": "mlx-community/gemma-3-1b-it-4bit",
+  "adapter": "experiments/gemma3-1b-4bit-lora-n207/adapters",
+  "mode": "lora",
+  "n_train": 207,
+  "iters": 156,
+  "epochs": 3,
+  "train_cmd": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "mlx_lm",
+    "lora",
+    "--model",
+    "mlx-community/gemma-3-1b-it-4bit",
+    "--train",
+    "--fine-tune-type",
+    "lora",
+    "--mask-prompt",
+    "--data",
+    "experiments/gemma3-1b-4bit-lora-n207/mlx_data",
+    "--adapter-path",
+    "experiments/gemma3-1b-4bit-lora-n207/adapters",
+    "--iters",
+    "156",
+    "--batch-size",
+    "4",
+    "--learning-rate",
+    "1e-05",
+    "--num-layers",
+    "16",
+    "--val-batches",
+    "-1",
+    "--steps-per-eval",
+    "25",
+    "--steps-per-report",
+    "5",
+    "--save-every",
+    "156",
+    "--max-seq-length",
+    "1024",
+    "--seed",
+    "0"
+  ],
+  "max_seq_length": 1024,
+  "steps_per_eval": 25,
+  "batch_size": 4,
+  "learning_rate": 1e-05,
+  "num_layers": 16,
+  "seed": 0,
+  "training_wall_s": 202.2,
+  "train_loss_curve": [
+    [
+      5,
+      1.36
+    ],
+    [
+      10,
+      0.518
+    ],
+    [
+      15,
+      0.399
+    ],
+    [
+      20,
+      0.234
+    ],
+    [
+      25,
+      0.174
+    ],
+    [
+      30,
+      0.154
+    ],
+    [
+      35,
+      0.19
+    ],
+    [
+      40,
+      0.179
+    ],
+    [
+      45,
+      0.139
+    ],
+    [
+      50,
+      0.164
+    ],
+    [
+      55,
+      0.144
+    ],
+    [
+      60,
+      0.124
+    ],
+    [
+      65,
+      0.098
+    ],
+    [
+      70,
+      0.1
+    ],
+    [
+      75,
+      0.119
+    ],
+    [
+      80,
+      0.117
+    ],
+    [
+      85,
+      0.128
+    ],
+    [
+      90,
+      0.086
+    ],
+    [
+      95,
+      0.106
+    ],
+    [
+      100,
+      0.107
+    ],
+    [
+      105,
+      0.081
+    ],
+    [
+      110,
+      0.09
+    ],
+    [
+      115,
+      0.066
+    ],
+    [
+      120,
+      0.085
+    ],
+    [
+      125,
+      0.064
+    ],
+    [
+      130,
+      0.08
+    ],
+    [
+      135,
+      0.076
+    ],
+    [
+      140,
+      0.082
+    ],
+    [
+      145,
+      0.072
+    ],
+    [
+      150,
+      0.059
+    ],
+    [
+      155,
+      0.086
+    ],
+    [
+      156,
+      0.091
+    ]
+  ],
+  "val_loss_curve": [
+    [
+      1,
+      2.816
+    ],
+    [
+      25,
+      0.173
+    ],
+    [
+      50,
+      0.145
+    ],
+    [
+      75,
+      0.123
+    ],
+    [
+      100,
+      0.116
+    ],
+    [
+      125,
+      0.115
+    ],
+    [
+      150,
+      0.105
+    ],
+    [
+      156,
+      0.106
+    ]
+  ],
+  "final_train_loss": 0.091,
+  "final_val_loss": 0.106,
+  "train_peak_rss_gb": 2.08,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 400.8184583248294,
+  "latency_ms_median": 388.9238960000512,
+  "peak_memory_gb": 1.294,
+  "adapter_config": {
+    "mask_prompt": true,
+    "fine_tune_type": "lora",
+    "num_layers": 16,
+    "batch_size": 4,
+    "iters": 156,
+    "learning_rate": 1e-05,
+    "seed": 0
+  },
+  "mask_prompt": true
+}

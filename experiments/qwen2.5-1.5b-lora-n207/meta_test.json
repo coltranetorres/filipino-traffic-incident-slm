@@ -1,0 +1,14 @@
+{
+  "model": "mlx-community/Qwen2.5-1.5B-Instruct-bf16",
+  "adapter": "experiments/qwen2.5-1.5b-lora-n207/adapters",
+  "max_tokens": 200,
+  "split": "test",
+  "decoding": "greedy",
+  "n_train": 207,
+  "mode": "lora",
+  "shot_ids": [],
+  "n": 176,
+  "latency_ms_mean": 864.5648754376122,
+  "latency_ms_median": 860.9584164987609,
+  "peak_memory_gb": 3.706
+}

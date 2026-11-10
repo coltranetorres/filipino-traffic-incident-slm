@@ -1,0 +1,122 @@
+{
+  "model": "mlx-community/gemma-3-1b-it-bf16",
+  "adapter": "experiments/gemma3-1b-lora-n50/adapters",
+  "mode": "lora",
+  "n_train": 50,
+  "iters": 39,
+  "epochs": 3,
+  "max_seq_length": 1024,
+  "steps_per_eval": 25,
+  "batch_size": 4,
+  "learning_rate": 1e-05,
+  "num_layers": 16,
+  "seed": 0,
+  "training_wall_s": 48.5,
+  "train_loss_curve": [
+    [
+      5,
+      1.424
+    ],
+    [
+      10,
+      0.469
+    ],
+    [
+      15,
+      0.364
+    ],
+    [
+      20,
+      0.247
+    ],
+    [
+      25,
+      0.146
+    ],
+    [
+      30,
+      0.105
+    ],
+    [
+      35,
+      0.119
+    ],
+    [
+      39,
+      0.08
+    ]
+  ],
+  "val_loss_curve": [
+    [
+      1,
+      2.817
+    ],
+    [
+      25,
+      0.175
+    ],
+    [
+      39,
+      0.148
+    ]
+  ],
+  "final_train_loss": 0.08,
+  "final_val_loss": 0.148,
+  "train_peak_rss_gb": 3.57,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 628.3625905496592,
+  "latency_ms_median": 622.4490839995269,
+  "peak_memory_gb": 3.038,
+  "adapter_config": {
+    "mask_prompt": true,
+    "fine_tune_type": "lora",
+    "num_layers": 16,
+    "batch_size": 4,
+    "iters": 39,
+    "learning_rate": 1e-05,
+    "seed": 0
+  },
+  "mask_prompt": true,
+  "train_cmd": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "mlx_lm",
+    "lora",
+    "--model",
+    "mlx-community/gemma-3-1b-it-bf16",
+    "--train",
+    "--fine-tune-type",
+    "lora",
+    "--mask-prompt",
+    "--data",
+    "experiments/gemma3-1b-lora-n50/mlx_data",
+    "--adapter-path",
+    "experiments/gemma3-1b-lora-n50/adapters",
+    "--iters",
+    "39",
+    "--batch-size",
+    "4",
+    "--learning-rate",
+    "1e-05",
+    "--num-layers",
+    "16",
+    "--val-batches",
+    "-1",
+    "--steps-per-eval",
+    "25",
+    "--steps-per-report",
+    "5",
+    "--save-every",
+    "39",
+    "--max-seq-length",
+    "1024",
+    "--seed",
+    "0"
+  ]
+}

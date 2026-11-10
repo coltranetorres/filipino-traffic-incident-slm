@@ -1,0 +1,743 @@
+{
+  "split": "validation",
+  "scores": {
+    "n": 40,
+    "json_validity": {
+      "value": 0.325,
+      "ci": [
+        0.2,
+        0.475
+      ]
+    },
+    "incident_macro_f1": {
+      "value": 0.09523809523809523,
+      "ci": [
+        0.0,
+        0.171875
+      ]
+    },
+    "incident_macro_f1_no_unknown": {
+      "value": 0.10884353741496598,
+      "ci": [
+        0.0,
+        0.19642857142857142
+      ]
+    },
+    "severity_acc": {
+      "value": 0.225,
+      "ci": [
+        0.1,
+        0.35
+      ]
+    },
+    "obstruction_acc": {
+      "value": 0.225,
+      "ci": [
+        0.1,
+        0.35
+      ]
+    },
+    "language_acc": {
+      "value": 0.2,
+      "ci": [
+        0.075,
+        0.35
+      ]
+    },
+    "location": {
+      "f1": {
+        "value": 0.2988505747126437,
+        "ci": [
+          0.1411764705882353,
+          0.4489795918367347
+        ]
+      },
+      "road_acc": {
+        "value": 0.175,
+        "ci": [
+          0.075,
+          0.3
+        ]
+      },
+      "landmark_acc": {
+        "value": 0.125,
+        "ci": [
+          0.025,
+          0.25
+        ]
+      },
+      "direction_acc": {
+        "value": 0.175,
+        "ci": [
+          0.075,
+          0.325
+        ]
+      }
+    },
+    "abstention": {
+      "value": 0.0967741935483871,
+      "ci": [
+        0.030303030303030304,
+        0.1896551724137931
+      ]
+    }
+  },
+  "subsets": {
+    "lang:filipino": {
+      "n": 10,
+      "json_validity": {
+        "value": 0.1,
+        "ci": [
+          0.0,
+          0.3
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "severity_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.16666666666666666,
+          "ci": [
+            0.0,
+            0.4
+          ]
+        },
+        "road_acc": {
+          "value": 0.1,
+          "ci": [
+            0.0,
+            0.3
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.1,
+          "ci": [
+            0.0,
+            0.3
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.05,
+        "ci": [
+          0.0,
+          0.15789473684210525
+        ]
+      }
+    },
+    "lang:english": {
+      "n": 13,
+      "json_validity": {
+        "value": 0.3076923076923077,
+        "ci": [
+          0.07692307692307693,
+          0.6153846153846154
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.07142857142857142,
+        "ci": [
+          0.0,
+          0.2
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.07142857142857142,
+        "ci": [
+          0.0,
+          0.2
+        ]
+      },
+      "severity_acc": {
+        "value": 0.23076923076923078,
+        "ci": [
+          0.0,
+          0.46153846153846156
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.3076923076923077,
+        "ci": [
+          0.07692307692307693,
+          0.6153846153846154
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.4,
+          "ci": [
+            0.0,
+            0.6470588235294118
+          ]
+        },
+        "road_acc": {
+          "value": 0.15384615384615385,
+          "ci": [
+            0.0,
+            0.38461538461538464
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.15384615384615385,
+          "ci": [
+            0.0,
+            0.38461538461538464
+          ]
+        },
+        "direction_acc": {
+          "value": 0.3076923076923077,
+          "ci": [
+            0.07692307692307693,
+            0.6153846153846154
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.1111111111111111,
+        "ci": [
+          0.0,
+          0.3333333333333333
+        ]
+      }
+    },
+    "lang:taglish": {
+      "n": 17,
+      "json_validity": {
+        "value": 0.47058823529411764,
+        "ci": [
+          0.23529411764705882,
+          0.7058823529411765
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.1349206349206349,
+        "ci": [
+          0.0,
+          0.2857142857142857
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.1349206349206349,
+        "ci": [
+          0.0,
+          0.2857142857142857
+        ]
+      },
+      "severity_acc": {
+        "value": 0.35294117647058826,
+        "ci": [
+          0.11764705882352941,
+          0.5882352941176471
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.29411764705882354,
+        "ci": [
+          0.058823529411764705,
+          0.5294117647058824
+        ]
+      },
+      "language_acc": {
+        "value": 0.47058823529411764,
+        "ci": [
+          0.23529411764705882,
+          0.7058823529411765
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.26666666666666666,
+          "ci": [
+            0.0975609756097561,
+            0.4444444444444444
+          ]
+        },
+        "road_acc": {
+          "value": 0.23529411764705882,
+          "ci": [
+            0.058823529411764705,
+            0.4117647058823529
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.17647058823529413,
+          "ci": [
+            0.0,
+            0.35294117647058826
+          ]
+        },
+        "direction_acc": {
+          "value": 0.11764705882352941,
+          "ci": [
+            0.0,
+            0.29411764705882354
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.125,
+        "ci": [
+          0.0,
+          0.2727272727272727
+        ]
+      }
+    },
+    "tag:noisy": {
+      "n": 4,
+      "json_validity": {
+        "value": 0.25,
+        "ci": [
+          0.0,
+          0.75
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "severity_acc": {
+        "value": 0.25,
+        "ci": [
+          0.0,
+          0.75
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.25,
+        "ci": [
+          0.0,
+          0.75
+        ]
+      },
+      "language_acc": {
+        "value": 0.25,
+        "ci": [
+          0.0,
+          0.75
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.25,
+          "ci": [
+            0.0,
+            0.375
+          ]
+        },
+        "road_acc": {
+          "value": 0.25,
+          "ci": [
+            0.0,
+            0.75
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "tag:no_location": {
+      "n": 2,
+      "json_validity": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "severity_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 1.0,
+          "ci": [
+            1.0,
+            1.0
+          ]
+        },
+        "road_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "tag:short": {
+      "n": 4,
+      "json_validity": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "severity_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "road_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "tag:ambiguous": {
+      "n": 2,
+      "json_validity": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": null,
+        "ci": [
+          null,
+          null
+        ]
+      },
+      "severity_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "road_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "tag:contradictory": {
+      "n": 3,
+      "json_validity": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "incident_macro_f1_no_unknown": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "severity_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "obstruction_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "language_acc": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "location": {
+        "f1": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            1.0
+          ]
+        },
+        "road_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "landmark_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "direction_acc": {
+          "value": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "abstention": {
+        "value": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

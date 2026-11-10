@@ -1,0 +1,59 @@
+{
+  "train": {
+    "count": 207,
+    "sha256": "21e74748e8563960a55289e175d976cfd85f663c3355a804ad93d2510dc71f8e",
+    "classes": {
+      "vehicle_breakdown": 34,
+      "road_accident": 37,
+      "road_hazard": 28,
+      "flooding": 30,
+      "road_closure": 25,
+      "heavy_traffic": 23,
+      "other": 14,
+      "unknown": 16
+    },
+    "languages": {
+      "taglish": 113,
+      "english": 47,
+      "filipino": 47
+    }
+  },
+  "validation": {
+    "count": 40,
+    "sha256": "a362e8786d69d8ef4f9a94f3ea91def9b2f3583a219681dfa1e85f6c4d403ec4",
+    "classes": {
+      "vehicle_breakdown": 6,
+      "road_accident": 7,
+      "flooding": 6,
+      "road_hazard": 5,
+      "road_closure": 5,
+      "heavy_traffic": 5,
+      "unknown": 3,
+      "other": 3
+    },
+    "languages": {
+      "taglish": 17,
+      "english": 13,
+      "filipino": 10
+    }
+  },
+  "test": {
+    "count": 176,
+    "sha256": "989fcc879560580009c460ff03a7f40c1808f7ed37a640a72d31d06b892024db",
+    "classes": {
+      "road_accident": 23,
+      "vehicle_breakdown": 22,
+      "flooding": 24,
+      "heavy_traffic": 23,
+      "road_closure": 23,
+      "road_hazard": 21,
+      "unknown": 20,
+      "other": 20
+    },
+    "languages": {
+      "taglish": 110,
+      "filipino": 38,
+      "english": 28
+    }
+  }
+}

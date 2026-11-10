@@ -1,0 +1,154 @@
+{
+  "model": "mlx-community/gemma-3-1b-it-bf16",
+  "adapter": "experiments/gemma3-1b-lora-n100/adapters",
+  "mode": "lora",
+  "n_train": 100,
+  "iters": 75,
+  "epochs": 3,
+  "max_seq_length": 1024,
+  "steps_per_eval": 25,
+  "batch_size": 4,
+  "learning_rate": 1e-05,
+  "num_layers": 16,
+  "seed": 0,
+  "training_wall_s": 79.7,
+  "train_loss_curve": [
+    [
+      5,
+      1.315
+    ],
+    [
+      10,
+      0.491
+    ],
+    [
+      15,
+      0.372
+    ],
+    [
+      20,
+      0.262
+    ],
+    [
+      25,
+      0.226
+    ],
+    [
+      30,
+      0.156
+    ],
+    [
+      35,
+      0.118
+    ],
+    [
+      40,
+      0.153
+    ],
+    [
+      45,
+      0.141
+    ],
+    [
+      50,
+      0.127
+    ],
+    [
+      55,
+      0.104
+    ],
+    [
+      60,
+      0.076
+    ],
+    [
+      65,
+      0.078
+    ],
+    [
+      70,
+      0.086
+    ],
+    [
+      75,
+      0.095
+    ]
+  ],
+  "val_loss_curve": [
+    [
+      1,
+      2.817
+    ],
+    [
+      25,
+      0.187
+    ],
+    [
+      50,
+      0.136
+    ],
+    [
+      75,
+      0.121
+    ]
+  ],
+  "final_train_loss": 0.095,
+  "final_val_loss": 0.121,
+  "train_peak_rss_gb": 3.57,
+  "max_tokens": 200,
+  "split": "validation",
+  "decoding": "greedy",
+  "shot_ids": [],
+  "n": 40,
+  "latency_ms_mean": 645.0381958247817,
+  "latency_ms_median": 644.2884374991991,
+  "peak_memory_gb": 3.151,
+  "adapter_config": {
+    "mask_prompt": true,
+    "fine_tune_type": "lora",
+    "num_layers": 16,
+    "batch_size": 4,
+    "iters": 75,
+    "learning_rate": 1e-05,
+    "seed": 0
+  },
+  "mask_prompt": true,
+  "train_cmd": [
+    "uv",
+    "run",
+    "python",
+    "-m",
+    "mlx_lm",
+    "lora",
+    "--model",
+    "mlx-community/gemma-3-1b-it-bf16",
+    "--train",
+    "--fine-tune-type",
+    "lora",
+    "--mask-prompt",
+    "--data",
+    "experiments/gemma3-1b-lora-n100/mlx_data",
+    "--adapter-path",
+    "experiments/gemma3-1b-lora-n100/adapters",
+    "--iters",
+    "75",
+    "--batch-size",
+    "4",
+    "--learning-rate",
+    "1e-05",
+    "--num-layers",
+    "16",
+    "--val-batches",
+    "-1",
+    "--steps-per-eval",
+    "25",
+    "--steps-per-report",
+    "5",
+    "--save-every",
+    "75",
+    "--max-seq-length",
+    "1024",
+    "--seed",
+    "0"
+  ]
+}
